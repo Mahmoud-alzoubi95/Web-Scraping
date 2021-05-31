@@ -10,6 +10,7 @@ bs4 = "^0.0.1"
 requests = "^2.25.1"
 jupyter = "^1.0.0"
 lab = "^6.3"
+jupyterlab = "^3.0.16"
 
 [tool.poetry.dev-dependencies]
 
