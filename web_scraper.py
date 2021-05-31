@@ -1,8 +1,5 @@
-import requests
 from bs4 import BeautifulSoup
-import json
-
-
+import requests
 
 
 def get_citations_needed_count(URL):
@@ -31,9 +28,9 @@ def get_citations_needed_report(URL):
                 li.append(i.parent.text)
                 counter = counter + 1
         print(li[counter-1])
-    return 
+    return li[counter-1]
 
 
 URL ="https://en.wikipedia.org/wiki/History_of_Mexico"
-print(get_citations_needed_count(URL))
+print("The citation needed =",get_citations_needed_count(URL))
 print(get_citations_needed_report(URL))
