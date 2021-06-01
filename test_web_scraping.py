@@ -1,6 +1,6 @@
 from web_scraper import *
 def test_correct_count_of_citations():
-    actual = get_citation_needed_count('https://en.wikipedia.org/wiki/History_of_Mexico')
+    actual = get_citations_needed_count('https://en.wikipedia.org/wiki/History_of_Mexico')
     # print(actual)
     expected = 5
     assert actual == expected
