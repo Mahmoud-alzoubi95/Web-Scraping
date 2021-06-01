@@ -28,7 +28,7 @@ def get_citations_needed_report(URL):
                 li.append(i.parent.text)
                 counter = counter + 1
         print(li[counter-1])
-    return li[counter-1]
+    return
 
 
 URL ="https://en.wikipedia.org/wiki/History_of_Mexico"
